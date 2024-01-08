@@ -19,7 +19,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 2rem;
+  margin-top: 2rem;
   font-family: "DM Sans", sans-serif;
 }
 nav ul {
@@ -41,8 +41,11 @@ nav ul li a {
   font-size: 16px;
   font-weight: 500;
 }
+.login:hover{
+  cursor: pointer;
+}
 .nv ul :hover {
-  color: #797b89;
+  color: var(--pa-1-color);
 }
 .free {
   font-family: "DM Sans", sans-serif;
@@ -211,7 +214,6 @@ nav ul li a {
   justify-content: space-between;
   align-items: center;
   padding: 0 5rem;
-  /* overflow: hidden; */
 }
 .box {
   position: relative;
@@ -272,9 +274,11 @@ nav ul li a {
   display: flex;
   gap: 40%;
 }
-.nvCtn {
-  margin-left: 0;
+.nvCtn{
   display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   justify-content: center;
 }
 .footerMain {
@@ -341,9 +345,10 @@ hr{
     align-items: center;
     padding-top: 10%;
     list-style: none;
-    margin: auto;
-    background-color: #fd6003;
-    color: var(--body-neutral);
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    background-color: white;
   }
   .second {
     grid-template-columns: repeat(1, 1fr);
@@ -468,6 +473,15 @@ hr{
     align-items: center;
     justify-content: center;
     margin-top: 5%;
+  }
+  .nvCtn ul {
+    display: flex;
+    justify-content: center;
+    margin-right:autp;
+  }
+  .btnss{
+    display: flex;
+    justify-content:center ;
   }
   .sixth {
     height: 1100px;
